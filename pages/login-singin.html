@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../script/padrao.js" defer></script>
+    <script src="../script/login-singin.js" defer></script>
+    <link rel="stylesheet" href="../styles/login-singin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/8ef8de57aa.js" crossorigin="anonymous"></script>
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="../assets/menu.svg" alt="" class="hamburguer"></div>
+            <div class="titulo">
+                <h1>VINHERIA</h1>
+                <h2>AGNELLO</h2>
+            </div>
+            <div class="sacola-container">
+                <a href="../pages/carrinho.html"><img src="../assets/sacola-carrinho.png" alt="sacola-carrinho"></a>
+                <p class="quantidade-itens" id="quantItensSacola">0</p>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="menu-lateral">
+            <nav class="menu-lateral-completo">
+                <div class="menu-lateral-close">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="titulo">
+                    <h1>VINHERIA</h1>
+                    <h2>AGNELLO <i></i></h2>
+                </div>
+                <h3>Pedidos</h3>
+                <ul>
+                    <li><a href="../pages/carrinho.html"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
+                </ul>
+                <h3>Páginas</h3>
+                <ul>
+                    <li><a href="../pages/home.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="../pages/catalogo.html"><i class="fas fa-shopping-bag"></i> Catalogo</a></li>
+                    <li><a href="../pages/sobrenos.html"><i class="fas fa-info-circle"></i> Sobre Nós</a></li>
+                </ul>
+                <h3 class="entrar-sair">Entrar</h3>
+                <ul class="lista-login-singnin">
+                    <li><a href="../pages/login-singin.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                    <li><a href="../pages/login-singin.html"><i class="fas fa-user-plus"></i> Singn-in</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="area-usuario">
+            <div class="card">
+                <div class="card-cadastro">
+                    <div class="area-troca">
+                        <div>
+                            <h1>Bem Vindo <br> De Volta!</h1>
+                            <p>Para ficar conectado conosco <br> insira seus dados</p>
+                        </div>
+                        <button id="telaCadastro">Login</button>
+                    </div>
+                    <div class="area-informacoes">
+                        <div>
+                            <h1>Criar uma conta</h1>
+                            <p id="avisoCadastro">Use seu e-mail para cadastrar-se</p>
+                        </div>
+                        <form>
+                            <input type="text" placeholder="Insira seu primeiro nome ou apelido" class="icon-placeholder" id="Nome">
+                            <i class="fas fa-user"></i>
+                            
+                            <input type="text" placeholder="Coloque seu nome completo" class="icon-placeholder" id="nomeCompleto">
+                            <i class="fas fa-user"></i>
+                            
+                            <input type="text" placeholder="Digite seu e-mail" class="icon-placeholder" id="Email">
+                            <i class="fas fa-envelope"></i>
+                            
+                            <input type="password" placeholder="Senha" class="icon-placeholder" id="Senha">
+                            <i class="fas fa-lock" id="SenhaIcon"></i>
+                            
+                            <input type="password" placeholder="Confirmar Senha" class="icon-placeholder" id="Senha_Confirm">
+                            <i class="fas fa-lock" id="SenhaConfirmaIcon"></i>
+                        </form>
+                        <button id="BotaoCadastro">Cadastrar</button>            
+                    </div>
+                </div>
+                <div class="card-login">
+                    <div class="area-informacoes">
+                        <div>
+                            <h1>Entrar</h1>
+                            <p id="avisoLogin">use seu e-mail e senha cadastrados</p>
+                        </div>
+                        <form>
+                            <input type="text" placeholder="Digite seu e-mail" class="icon-placeholder" id="EmailInput">
+                            <i class="fas fa-envelope"></i>
+                            
+                            <input type="password" placeholder="Senha" class="icon-placeholder" id="SenhaInput">
+                            <i class="fas fa-lock" id="SenhaIconLogin"></i>
+                        </form>
+                        <button id="BotaoLogin">login</button>            
+                    </div>
+                    <div class="area-troca">
+                        <div>
+                            <h1>E aí Fãns da uva</h1>
+                            <p>insira seus dados pessoais <br> e começe essa jornada conosco</p>
+                        </div>
+                        <button id="telaLogin" >Cadastrar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <div>
+                <img src="../assets/VR-logo.png" alt="">
+            </div>
+            <div>
+                <h2>Estr. do Vinho, 9111 - Canguera, São Roque - SP</h2>
+                <h2>CEP: 18145-002</h2>
+
+            </div>
+            <div>
+                <h2><i class="fab fa-whatsapp"></i> +55 (11) 3601-3501</h2>
+                <h2><i class="fab fa-instagram"></i> @Agnello_Vinhos</h2>
+                <h2><i class="fab fa-twitter"></i> @Agnello_Vinhos</h2>    
+            </div>
+
+        </nav>
+
+    </footer>
+</body>
+</html>

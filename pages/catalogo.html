@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/catalogo.css">
+    <script src="https://kit.fontawesome.com/8ef8de57aa.js" crossorigin="anonymous"></script>
+    <script src="../script/catalogo.js" defer></script>
+    <script src="../script/padrao.js" defer></script>
+    <title>Catalogo</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="../assets/menu.svg" alt="" class="hamburguer"></div>
+            <div class="titulo">
+                <h1>VINHERIA</h1>
+                <h2>AGNELLO</h2>
+            </div>
+            <div class="sacola-container">
+                <a href="../pages/carrinho.html"><img src="../assets/sacola-carrinho.png" alt="sacola-carrinho"></a>
+                <p class="quantidade-itens" id="quantItensSacola">0</p>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="menu-lateral">
+            <nav class="menu-lateral-completo">
+                <div class="menu-lateral-close">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="titulo">
+                    <h1>VINHERIA</h1>
+                    <h2>AGNELLO <i></i></h2>
+                </div>
+                <h3>Pedidos</h3>
+                <ul>
+                    <li><a href="../pages/carrinho.html"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
+                </ul>
+                <h3>Páginas</h3>
+                <ul>
+                    <li><a href="../pages/home.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="../pages/catalogo.html"><i class="fas fa-shopping-bag"></i> Catalogo</a></li>
+                    <li><a href="../pages/sobrenos.html"><i class="fas fa-info-circle"></i> Sobre Nós</a></li>
+                </ul>
+                <h3 class="entrar-sair">Entrar</h3>
+                <ul class="lista-login-singnin">
+                    <li><a href="../pages/login-singin.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                    <li><a href="../pages/login-singin.html"><i class="fas fa-user-plus"></i> Singn-in</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-lateral-criar menu-lateral-criar-fechar">
+            <form class="personalizacao">
+                <div class="personalizarVinho">
+                    <input type="text" placeholder="Digite o NOME do seu vinho" id="nomeVinhoPersonalizacao">
+                    <input type="number" placeholder="Digite o PREÇO do seu vinho" id="precoVinhoPersonalizacao">
+                    <input type="number" placeholder="Digite o ANO do seu vinho" id="anoVinhoPersonalizacao" oninput="mascaraAno()" step="0.01">
+                    <h2 class="criarProduto">CRIAR</h2>
+                </div>
+                <h2>Altere as cores dos vinhos</h2>
+                <div class="personalizarCor">
+                    <input type="color" id="cor01">
+                    <input type="color" id="cor02">
+                </div>
+            </form>
+            <div id="botaoFecharBarra" class="fas fa-chevron-right"></div>
+        </div>
+        <div class="conteudo">
+            <section class="produtos-destaque">
+                <h1>Produtos em destaque</h1>
+                <div class="produtos-destaque-carrossel">
+                    <div class="destaque-card svg-container">
+                        <div>
+                            <img src="../assets/foto-vinho.png" alt="" class="destaque-card-imagem">
+                        </div>
+                        <div class="card-info">
+                            <div>
+                                <h2 class="nomeVinhoDestaque">DOMINI VENETI PINOT GRIGIO</h2>
+                                <p class="anoVinhoDestaque">2023</p>
+                            </div>
+                            <h3 class="precoVinhoDestaque">R$ 199,99</h3>
+                        </div>
+                        <div class="card-carrinho">
+                            <div class="circulo">
+                                <img src="../assets/carrinho.svg" alt="" class="addCarrinho">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1>VEJA MAIS PRODUTOS</h1>
+            </section>
+            <section class="produtos-galeria">
+                <div class="grid-produtos">
+                    <div class="destaque-card-grid svg-container">
+                        <div>
+                            <img src="../assets/foto-vinho.png" alt="" class="destaque-card-imagem-grid">
+                        </div>
+                        <div class="card-info-grid">
+                            <div>
+                                <p class="anoVinhoDestaque">2023</p>
+                            </div>
+                            <div class="bottom-info-grid">
+                                <div>
+                                    <div>
+                                        <h2 class="nomeVinhoDestaque">DOMINI VENETI PINOT GRIGIO</h2>
+                                        <div class="grid-separation"></div>
+                                    </div>
+                                    <h3 class="precoVinhoDestaque">R$ 199,99</h3>
+                                </div>
+                                <div class="card-carrinho">
+                                    <div class="circulo">
+                                        <img src="../assets/carrinho.svg" alt="" class="addCarrinho">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <div>
+                <img src="../assets/VR-logo.png" alt="">
+            </div>
+            <div>
+                <h2>Estr. do Vinho, 9111 - Canguera, São Roque - SP</h2>
+                <h2>CEP: 18145-002</h2>
+
+            </div>
+            <div>
+                <h2><i class="fab fa-whatsapp"></i> +55 (11) 3601-3501</h2>
+                <h2><i class="fab fa-instagram"></i> @Agnello_Vinhos</h2>
+                <h2><i class="fab fa-twitter"></i> @Agnello_Vinhos</h2>    
+            </div>
+
+        </nav>
+
+    </footer>
+</body>
+</html>

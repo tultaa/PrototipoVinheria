@@ -1,0 +1,515 @@
+@import url(./padrao.css);
+
+
+:root{
+    overflow-x: hidden;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #F5F5F5;
+    padding: min(25px ,1.30208vw) min(35px ,1.82291vw);
+    height: min(100px ,10.20833vw);
+}
+
+.titulo h1, .titulo h2{
+    color: #F5F5F5;
+    font-family: Cutive Mono;
+    font-style: normal;
+    font-weight: 400;
+    line-height: min(65px ,3.38541vw);
+    font-size: min(70px ,3.64583vw);
+    width: 100%;
+    text-align: center;
+}
+
+.titulo h2{
+    font-size: min(70px ,1.77083vw);
+    line-height: min(30px ,1.5625vw);
+    letter-spacing: min(7.175px ,0.37369vw);
+}
+
+.sacola-container{
+    position: relative;
+}
+
+.quantidade-itens{
+    position: absolute;
+    left: 67%;
+    top: 17%;
+    font-size: min(16px ,1.79333vw);
+}
+
+nav img{
+    width: min(50px ,5.60416vw);
+    height: min(50px ,5.60416vw);
+    object-fit: contain;
+}
+
+/* footer ------------------------------------------------------------------------------------------------------------------------------ */
+footer nav{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    align-items: center;
+    background-color: #000;
+    color: #F5F5F5;
+    padding: min(25px ,1.30208vw) min(35px ,1.82291vw);
+    height: min(250px ,10.20833vw);
+}
+
+footer h2{
+    color: #F5F5F5;
+    text-align: center;
+    font-family: Droid Sans;
+    font-size: 1.5625vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: start;
+}
+
+footer img{
+    width: 80%;
+    height: 100%;
+    border-right: 3px solid #F5F5F5;
+}
+
+/* menu lateral ------------------------------------------------------------------------------------------------------------------------------ */
+
+.hamburguer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: min(30px ,3.38541vw);
+    height: min(30px ,3.38541vw);
+    cursor: pointer;
+    position: relative;
+}
+
+.menu-lateral-completo{
+    display: none;
+}
+
+.menu-lateral h1{
+    padding: 0;
+    font-size: min(50px ,3.38541vw);
+    margin-top: min(70px ,3.38541vw);
+}
+
+.menu-lateral .titulo h1, .menu-lateral .titulo h2{
+    color: #000;
+}
+
+.menu-lateral-completo .titulo h2{
+    margin-bottom: 30%;
+    font-size: min(35px ,3.38541vw);
+    margin-top: min(10px ,3.38541vw);
+
+}
+
+.menu-lateral-completo h3{
+    text-align: justify;
+    font-family: "Droid Sans";
+    font-size: min(20px, 1.04167vw);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: min(1.3px, 0.0677083vw);
+    margin-top: min(70px, 0.0677083vw);
+    margin-bottom: min(30px, 0.0677083vw);
+    text-transform: uppercase;
+    color: #000000b2;
+    width: 90%;
+}
+
+.menu-lateral ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: min(20px ,1.04166vw);
+    width: 75%;
+}
+
+.menu-lateral-completo ul li a{
+    list-style: none;
+    font-family: Droid Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: min(20px ,1.04166vw);
+    line-height: min(20px ,1.04166vw);
+    letter-spacing: min(1.3px ,0.06770vw);
+    text-transform: capitalize;
+    color: #000000a1;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-lateral-completo ul li a:hover{
+    color: #000;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px; /* adjust as needed */
+}
+
+.menu-lateral-completo.open{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    width: min(290px, 100vw);
+    height: 100%;
+    background-color: #e8eae8;
+    position: fixed;
+    animation: entrar 0.5s ease-in-out;
+    z-index: 1;
+}
+
+@keyframes entrar {
+    0%{
+        clip-path: polygon(0vw 0vh,0vw 0vh,0vw 100vh,0vw 100vh);
+    }
+    100%{
+        clip-path: polygon(0vw 0vh,30vw 0vh,30vw 100vh,0vw 100vh);
+    }
+}
+
+@keyframes sair {
+    0%{
+        clip-path: polygon(0vw 0vh,30vw 0vh,30vw 100vh,0vw 100vh);
+    }
+    100%{
+        clip-path: polygon(0vw 0vh,0vw 0vh,0vw 100vh,0vw 100vh);
+    }
+}
+
+.menu-lateral-completo ul li a:hover .fas{
+    animation: swing 0.8s infinite;
+}
+
+@keyframes swing {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(15deg);
+    }
+    40% {
+        transform: rotate(-10deg);
+    }
+    60% {
+        transform: rotate(5deg);
+    }
+    80% {
+        transform: rotate(-5deg);
+    }
+}
+
+.menu-lateral-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: min(30px ,1.04166vw);
+}
+
+/* ----------------------------------------------------------------- main ----------------------------------------------------------------- */
+
+.area-usuario{
+    height: max-content;
+    background-image: url(../assets/papel-preto-amassado.png);
+    padding: 3vw 12vw;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    background-color: #444444;
+    height: 36vw;
+    width: 90%;
+    border-radius: 2vw;
+    position: relative;
+}
+
+.card-cadastro{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.card-login{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.animar-D-E {
+    animation: slide-in 2s forwards; 
+    clip-path: inset(0 100% 0 0);
+  }
+  
+  @keyframes slide-in {
+    0%{
+        clip-path: inset(0 100% 0 0);
+    }
+    100%{
+        clip-path: inset(0 0 0 0);
+    }
+  }
+
+.animar-E-D {
+    animation: slide-out 2s forwards; 
+    clip-path: inset(0 0 0 0);
+    }
+    
+  @keyframes slide-out {
+    0%{
+        clip-path: inset(0 0 0 0);
+    }
+    100%{
+        clip-path: inset(0 100% 0 0);
+    }
+}
+
+.animar-T-B {
+    animation: slide-in-v 2s forwards; 
+    clip-path: inset(0 0 100% 0);
+  }
+  
+  @keyframes slide-in-v {
+    0%{
+        clip-path: inset(0 0 100% 0);
+    }
+    100%{
+        clip-path: inset(0 0 0 0);
+    }
+  }
+
+.animar-B-T {
+    animation: slide-out-v 2s forwards; 
+    clip-path: inset(0 0 0 0);
+    }
+    
+  @keyframes slide-out-v {
+    0%{
+        clip-path: inset(0 0 0 0);
+    }
+    100%{
+        clip-path: inset(0 0 100% 0);
+    }
+}
+
+
+.card-cadastro .area-troca{
+    background-color: #444444;
+    border-radius: 2vw 0 0 2vw;
+    display: flex;
+    padding: 0 10%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.card-login .area-troca{
+    background-color: #444444;
+    border-radius: 0 2vw 2vw 0;
+    display: flex;
+    padding: 0 10%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    height: 100%;
+
+}
+
+.card-cadastro .area-informacoes{
+    background-color: #e8eae8;
+    border-radius: 0 2vw 2vw 0;
+    display: flex;
+    padding: 0 10%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    height: 100%;
+
+}
+
+.card-login .area-informacoes{
+    background-color: #e8eae8;
+    border-radius: 2vw 0 0 2vw;
+    display: flex;
+    padding: 0 10%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.card h1{
+    color: #e8eae8;
+    font-family: sans-serif;
+    font-size: min(60px, 1vw);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -(min(6.4px, 1vw));
+    text-transform: uppercase;
+    margin-bottom: 1.2vw;
+}
+
+.card p{
+    color: #e8eae8;
+    font-family: sans-serif;
+    font-size: min(20px, 1vw);
+    line-height: min(24px, 1vw);
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.area-troca button{
+    color: #e8eae8;
+    font-family: sans-serif;
+    font-size: min(20px, 1vw);
+    line-height: min(24px, 1vw);
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: transparent;
+    border-radius: 2vw;
+    padding: 1vw 0;
+    border: 3px solid #e8eae8;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.area-troca button:hover{
+    background-color: #e8eae8;
+    border: 3px solid #e8eae8;
+    color: #444444;
+}
+
+.area-informacoes h1, .area-informacoes p{
+    color: #444444;
+}
+
+.area-informacoes form{
+    display: flex;
+    flex-direction: column;    
+}
+
+.area-informacoes form input{
+    height: min(50px, 1vw);
+    background-color: #d1d1d1;
+    border: none;
+    border-radius: 0.5vw;   
+    padding-left: 9%;
+    color: #444444c0;
+    font-family: sans-serif;
+    font-size: min(20px, 1vw);
+    line-height: min(24px, 1vw);
+    font-style: normal;
+    font-weight: 700;
+}
+
+form i:hover{
+    animation: swing 0.8s infinite;
+}
+
+.area-informacoes form input::placeholder{
+    color: #4444445e;
+    font-family: sans-serif;
+    font-size: min(20px, 1vw);
+    line-height: min(24px, 1vw);
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card-cadastro form i {
+    position: relative;
+    left: 3%;
+    bottom: 10%;
+    width: min-content;
+    font-size: min(25px, 1vw);
+}
+
+.card-login form i {
+    position: relative;
+    left: 3%;
+    bottom: 25%;
+    width: min-content;
+    font-size: min(25px, 1vw);
+}
+
+.area-informacoes button{
+    color: #444444;
+    font-family: sans-serif;
+    font-size: min(20px, 1vw);
+    line-height: min(24px, 1vw);
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: transparent;
+    border-radius: 2vw;
+    padding: 1vw 0;
+    border: 3px solid #444444;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.area-informacoes button:hover{
+    background-color: #444444;
+    border: 3px solid #444444;
+    color: #e8eae8;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .card{
+        height: 170vw;
+        background-color: transparent;
+    }
+    .card-cadastro{
+        grid-template-columns: none;
+        grid-template-rows: 40% 60%;
+        height: 80%;
+    }
+
+    .card-login{
+        grid-template-columns: none;
+        grid-template-rows: 40% 60%;
+        height: 80%;
+    }
+
+    .card-cadastro .area-troca {
+        border-radius: 2vw 2vw 0 0;
+    }
+
+    .card-login .area-troca {
+        border-radius: 0 0 2vw 2vw;
+    }
+
+    .card-cadastro .area-informacoes {
+        border-radius: 0 0 2vw 2vw;
+    }
+
+    .card-login .area-informacoes {
+        border-radius: 2vw 2vw 0 0;
+    }
+
+}

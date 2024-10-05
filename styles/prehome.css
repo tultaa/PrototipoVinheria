@@ -1,0 +1,89 @@
+@import url(./padrao.css);
+
+section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/fundo-pre-home.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box{
+    width: 50vw;
+    max-width: 900px;
+    height: 30%;
+    flex-shrink: 0;
+    background-color: #EFEFF0;
+    border-radius: 3vw;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.box>div{
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    color: #000;
+    text-align: center;
+    font-family: Bona Nova;
+    font-size: min(80px, 1vw);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 2vw;
+}
+
+h2 , p{
+    color: #000;
+    text-align: center;
+    font-family: Cutive Mono;
+    font-size: min(50px, 1vw);	
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: min(25px, 1vw);	
+    margin-top: 1vw;
+}
+
+.botoes{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.botoes button{
+    width: 40%;
+    height: min(90px, 5vw);
+    border-radius: 1vw;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Cutive Mono;
+    font-size: min(30px, 1vw);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.botoes button:hover{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}

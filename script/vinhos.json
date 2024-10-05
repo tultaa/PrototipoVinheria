@@ -1,0 +1,289 @@
+[
+  {
+    "nome": "Vinho Tinto Reserva",
+    "preco": 39.99,
+    "quantidade": 15,
+    "imagem": "vinho_tinto.jpg",
+    "ano": 2018
+  },
+  {
+    "nome": "Vinho Branco Especial",
+    "preco": 29.99,
+    "quantidade": 10,
+    "imagem": "vinho_branco.jpg",
+    "ano": 2020
+  },
+  {
+    "nome": "Vinho Rosé Seleção",
+    "preco": 24.99,
+    "quantidade": 20,
+    "imagem": "vinho_rose.jpg",
+    "ano": 2022
+  },
+  {
+    "nome": "Vinho Tinto Reserva Premium",
+    "preco": 59.99,
+    "quantidade": 8,
+    "imagem": "vinho_premium.jpg",
+    "ano": 2017
+  },
+  {
+    "nome": "Vinho Branco Seco",
+    "preco": 19.99,
+    "quantidade": 25,
+    "imagem": "vinho_seco.jpg",
+    "ano": 2021
+  },
+  {
+    "nome": "Vinho Tinto Encorpado",
+    "preco": 45.99,
+    "quantidade": 12,
+    "imagem": "vinho_encorpado.jpg",
+    "ano": 2019
+  },
+  {
+    "nome": "Vinho Rosé Leve",
+    "preco": 21.99,
+    "quantidade": 18,
+    "imagem": "vinho_rose_leve.jpg",
+    "ano": 2023
+  },
+  {
+    "nome": "Vinho Tinto Clássico",
+    "preco": 34.99,
+    "quantidade": 14,
+    "imagem": "vinho_classico.jpg",
+    "ano": 2016
+  },
+  {
+    "nome": "Vinho Branco Frutado",
+    "preco": 27.99,
+    "quantidade": 22,
+    "imagem": "vinho_frutado.jpg",
+    "ano": 2024
+  },
+  {
+    "nome": "Vinho Tinto Reserva Especial",
+    "preco": 79.99,
+    "quantidade": 5,
+    "imagem": "vinho_especial.jpg",
+    "ano": 2015
+  },
+  {
+    "nome": "Vinho Tinto Jovem",
+    "preco": 14.99,
+    "quantidade": 30,
+    "imagem": "vinho_jovem.jpg",
+    "ano": 2023
+  },
+  {
+    "nome": "Vinho Rosé Fresco",
+    "preco": 18.99,
+    "quantidade": 28,
+    "imagem": "vinho_rose_fresco.jpg",
+    "ano": 2022
+  },
+  {
+    "nome": "Vinho Branco Leve",
+    "preco": 22.99,
+    "quantidade": 25,
+    "imagem": "vinho_branco_leve.jpg",
+    "ano": 2021
+  },
+  {
+    "nome": "Vinho Tinto Suave",
+    "preco": 28.99,
+    "quantidade": 20,
+    "imagem": "vinho_suave.jpg",
+    "ano": 2019
+  },
+  {
+    "nome": "Vinho Tinto Encorpado Reserva",
+    "preco": 54.99,
+    "quantidade": 10,
+    "imagem": "vinho_encorpado_reserva.jpg",
+    "ano": 2018
+  },
+  {
+    "nome": "Vinho Branco Especial Reserva",
+    "preco": 42.99,
+    "quantidade": 15,
+    "imagem": "vinho_branco_especial_reserva.jpg",
+    "ano": 2020
+  },
+  {
+    "nome": "Vinho Rosé Refrescante",
+    "preco": 16.99,
+    "quantidade": 25,
+    "imagem": "vinho_rose_refrescante.jpg",
+    "ano": 2022
+  },
+  {
+    "nome": "Vinho Tinto Clássico Reserva",
+    "preco": 49.99,
+    "quantidade": 12,
+    "imagem": "vinho_classico_reserva.jpg",
+    "ano": 2017
+  },
+  {
+    "nome": "Vinho Branco Suave",
+    "preco": 24.99,
+    "quantidade": 18,
+    "imagem": "vinho_branco_suave.jpg",
+    "ano": 2021
+  },
+  {
+    "nome": "Vinho Tinto Robusto",
+    "preco": 38.99,
+    "quantidade": 14,
+    "imagem": "vinho_robusto.jpg",
+    "ano": 2019
+  },
+  {
+    "nome": "Vinho Rosé Intenso",
+    "preco": 27.99,
+    "quantidade": 20,
+    "imagem": "vinho_rose_intenso.jpg",
+    "ano": 2023
+  },
+  {
+    "nome": "Vinho Tinto Elegante",
+    "preco": 41.99,
+    "quantidade": 10,
+    "imagem": "vinho_elegante.jpg",
+    "ano": 2022
+  },
+  {
+    "nome": "Vinho Branco Fresco",
+    "preco": 20.99,
+    "quantidade": 22,
+    "imagem": "vinho_branco_fresco.jpg",
+    "ano": 2021
+  },
+  {
+    "nome": "Vinho Tinto Aromático",
+    "preco": 32.99,
+    "quantidade": 16,
+    "imagem": "vinho_aromatico.jpg",
+    "ano": 2020
+  },
+  {
+    "nome": "Vinho Rosé Frutado",
+    "preco": 23.99,
+    "quantidade": 24,
+    "imagem": "vinho_rose_frutado.jpg",
+    "ano": 2023
+  },
+  {
+    "nome": "Vinho Tinto Jovem",
+    "preco": 19.99,
+    "quantidade": 28,
+    "imagem": "vinho_tinto_jovem.jpg",
+    "ano": 2019
+  },
+  {
+    "nome": "Vinho Branco Seco",
+    "preco": 26.99,
+    "quantidade": 18,
+    "imagem": "vinho_branco_seco.jpg",
+    "ano": 2020
+  },
+  {
+    "nome": "Vinho Rosé Leve",
+    "preco": 14.99,
+    "quantidade": 30,
+    "imagem": "vinho_rose_leve.jpg",
+    "ano": 2018
+  },
+  {
+    "nome": "Vinho Tinto Encorpado",
+    "preco": 34.99,
+    "quantidade": 12,
+    "imagem": "vinho_encorpado.jpg",
+    "ano": 2017
+  },
+  {
+    "nome": "Vinho Tinto Reserva Premium",
+    "preco": 56.99,
+    "quantidade": 10,
+    "imagem": "vinho_premium.jpg",
+    "ano": 2016
+  },
+  {
+    "nome": "Vinho Branco Especial",
+    "preco": 25.99,
+    "quantidade": 20,
+    "imagem": "vinho_branco.jpg",
+    "ano": 2019
+  },
+  {
+    "nome": "Vinho Rosé Seleção",
+    "preco": 19.99,
+    "quantidade": 25,
+    "imagem": "vinho_rose.jpg",
+    "ano": 2020
+  },
+  {
+    "nome": "Vinho Tinto Reserva",
+    "preco": 37.99,
+    "quantidade": 15,
+    "imagem": "vinho_tinto.jpg",
+    "ano": 2018
+  },
+  {
+    "nome": "Vinho Branco Especial",
+    "preco": 21.99,
+    "quantidade": 30,
+    "imagem": "vinho_branco.jpg",
+    "ano": 2017
+  },
+  {
+    "nome": "Vinho Rosé Seleção",
+    "preco": 17.99,
+    "quantidade": 28,
+    "imagem": "vinho_rose.jpg",
+    "ano": 2016
+  },
+  {
+    "nome": "Vinho Tinto Reserva Premium",
+    "preco": 53.99,
+    "quantidade": 12,
+    "imagem": "vinho_premium.jpg",
+    "ano": 2015
+  },
+  {
+    "nome": "Vinho Branco Seco",
+    "preco": 18.99,
+    "quantidade": 25,
+    "imagem": "vinho_seco.jpg",
+    "ano": 2019
+  },
+  {
+    "nome": "Vinho Tinto Encorpado",
+    "preco": 42.99,
+    "quantidade": 10,
+    "imagem": "vinho_encorpado.jpg",
+    "ano": 2018
+  },
+  {
+    "nome": "Vinho Rosé Leve",
+    "preco": 16.99,
+    "quantidade": 18,
+    "imagem": "vinho_rose_leve.jpg",
+    "ano": 2017
+  },
+  {
+    "nome": "Vinho Tinto Clássico",
+    "preco": 32.99,
+    "quantidade": 14,
+    "imagem": "vinho_classico.jpg",
+    "ano": 2016
+  },
+  {
+    "nome": "Vinho Branco Frutado",
+    "preco": 24.99,
+    "quantidade": 22,
+    "imagem": "vinho_frutado.jpg",
+    "ano": 2020
+  }
+]
